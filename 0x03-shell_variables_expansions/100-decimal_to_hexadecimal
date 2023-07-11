@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "obase=16" | tr -d '\n' && echo "ibase=2" | tr -d '\n' && echo $DECIMAL | bc
+printf "%s\n" $(echo "obase=16" | tr -d '\n' && echo "ibase=2" | tr -d '\n' && echo $DECIMAL)
